@@ -13,7 +13,7 @@ let
         python-with-my-packages = my-python.withPackages (p: with p; [
         pandas
         requests
-        pytorch
+        pytorch-bin
         termcolor
         # other python packages you want
     ]);
@@ -22,7 +22,7 @@ pkgs.mkShell {
     buildInputs = [
         python-with-my-packages
         # other dependencies
-        cudaPackages.cudatoolkit_11_3
+        cudaPackages.cudatoolkit_11_5
     ];
     shellHook = ''
         PYTHONPATH=${python-with-my-packages}/${python-with-my-packages.sitePackages}
