@@ -13,7 +13,7 @@ let
         stdenv = pkgs.stdenv;
         lib = pkgs.lib;
         fetchFromGitHub = pkgs.fetchFromGitHub;
-        cudatoolkit = pkgs.cudatoolkit_11;
+        cudatoolkit = pkgs.cudatoolkit_11_5;
 
     };
 
