@@ -1,0 +1,5 @@
+# While in nix environment
+autodock_gpu_128wi \ --ffile ./1stp/derived/1stp_protein.maps.fld \ --lfile ./1stp/derived/1stp_ligand.pdbqt
+
+# Normal ubuntu environment
+./bin/autodock_gpu_128wi --ffile ./input/1stp/derived/1stp_protein.maps.fld --lfile ./input/1stp/derived/1stp_ligand.pdbqt
